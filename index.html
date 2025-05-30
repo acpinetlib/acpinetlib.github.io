@@ -1,57 +1,221 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to ACPi NET Library</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #00c6ff;
-      color: #000;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #007a9e;
-      color: white;
-    }
-  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ACPi NET Library - .NET Hardware Monitoring DLL</title>
+<meta name="description" content="ACPi.dll is a lightweight .NET library that provides access to real-time hardware information including CPU, GPU, RAM, HDD, and motherboard." />
+<meta name="keywords" content="ACPi, .NET Library, Hardware Monitor, CPU Info, GPU Info, RAM Usage, System Diagnostics, ACPi.dll" />
+<meta name="author" content="Ari Sohandri Putra" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://example.com/" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<!-- Schema.org for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ACPi NET Library",
+  "operatingSystem": "Windows",
+  "applicationCategory": "DeveloperApplication",
+  "description": "A lightweight .NET library to retrieve real-time hardware information including CPU, GPU, RAM, HDD, and motherboard.",
+  "softwareVersion": "1.0",
+  "author": {
+    "@type": "Person",
+    "name": "Ari Sohandri Putra"
+  },
+  "url": "https://example.com/",
+  "downloadUrl": "https://example.com/ACPi.zip"
+}
+</script>
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:visited {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF0000;
+	text-decoration: none;
+}
+a:active {
+	color: #0000FF;
+	text-decoration: none;
+}
+.style1 {
+	font-size: xx-large;
+	font-weight: bold;
+}
+pre {
+	background-color: #f4f4f4;
+	padding: 15px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	font-family: Consolas, monospace;
+}
+.style3 {font-size: x-small}
+.style4 {font-size: small}
+.style6 {font-size: small; font-weight: bold; }
+.style10 {font-size: small; color: #000000; }
+.style12 {font-size: x-large}
+.style13 {font-size: medium}
+-->
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Welcome to <br><strong>ACPi NET Library</strong></h1>
-    <p>A lightweight .NET-based framework for accessing hardware information such as CPU, RAM, GPU, and hard disk using ACPI (Arix Central Processing Info) in a simple and efficient manner.</p>
-  </div>
+<table width="100%" border="0" cellspacing="4" cellpadding="4">
+  <tr>
+    <td width="379" rowspan="2" align="center" valign="top" bgcolor="#eaeaea"><div align="center">
+      <p><img src="ACPi_Icon.png" alt="ACPi Icon" width="369" height="339" /></p>
+      <p><span class="style3">Copyright (c) 2025 Ari Sohandri Putra. All Rights Reserved. </span></p>
+    </div>
+    <p><img src="Capture.PNG" width="482" height="635" /></p></td>
+    <td width="702" align="left" valign="top"><p><span class="style1">W</span>elcome <em><strong>!</strong></em> <hr />
+      <strong data-start="219" data-end="231">ACPi.dll</strong> is a lightweight .NET library designed to provide access to real-time system hardware information including <strong>CPU</strong>, <strong>GPU</strong>, <strong>RAM</strong>, <strong>HDD</strong>, and motherboard details. It enables developers to build monitoring tools and system diagnostic utilities effortlessly.
+      <p><strong><span class="style12">F</span>eatures</strong></p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th width="213" align="left" bgcolor="#FFFF00"><span class="style10">Feature</span></th>
+          <th width="399" align="left" bgcolor="#FFFF00"><span class="style10">Description</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="style6">GetUserName()</span></td>
+          <td><span class="style4">Retrieves the current Windows user name</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetCPUName()</span></td>
+          <td><span class="style4">Returns the name/model of the processor</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetCPUInfo()</span></td>
+          <td><span class="style4">Retrieves CPU temperature, clock speed, and load</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetRAMInfos()</span></td>
+          <td><span class="style4">Provides comprehensive RAM usage statistics</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetGPUInfo()</span></td>
+          <td><span class="style4">Returns GPU load, clock, temperature, and fan speed</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetHDDInfo()</span></td>
+          <td><span class="style4">Returns hard drive temperature and usage</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetMainboardName()</span></td>
+          <td><span class="style4">Returns the motherboard model name</span></td>
+        </tr>
+        <tr>
+          <td><span class="style6">GetCoreCount()</span></td>
+          <td><span class="style4">Returns the number of physical CPU cores</span></td>
+        </tr>
+      </tbody>
+    </table>    
+    <p><strong><span class="style12">I</span>nstallation</strong></p>
+    <ol>
+      <li><strong data-start="1368" data-end="1391"><a href="ACPi.zip">Download ACPi</a></strong> and place it in your project directory.</li>
+      <li>In <strong data-start="1438" data-end="1455">Visual Studio</strong>:
+        <ul>
+          <li>Right-click your project &rarr; <strong data-start="1489" data-end="1509">Add Reference...</strong></li>
+          <li>Go to the <strong data-start="1525" data-end="1535">Browse</strong> tab and select <strong>ACPi.dll</strong></li>
+          <li>Click <strong data-start="1573" data-end="1579">OK</strong></li>
+          </ul>
+      </li>
+      </ol>    
+    <p><strong><span class="style12">U</span>sage Examples</strong></p>
+    <p class="style4"><strong>C# Example</strong></p>
+	  <pre><code>
+using ACPi;
+
+class Program
+{
+    static void Main()
+    {
+        CPU cpu = new CPU();
+
+        Console.WriteLine("User: " + cpu.GetUserName());
+        Console.WriteLine("CPU: " + cpu.GetCPUName());
+
+        var rams = cpu.GetRAMInfos();
+        foreach (var ram in rams)
+        {
+            Console.WriteLine("RAM: " + ram.Name);
+            Console.WriteLine("Load: " + string.Join(", ", ram.Load));
+            Console.WriteLine("Used: " + string.Join(", ", ram.Used));
+            Console.WriteLine("Available: " + string.Join(", ", ram.Available));
+            Console.WriteLine("Total: " + string.Join(", ", ram.Total));
+        }
+
+        var gpus = cpu.GetGPUInfo();
+        foreach (var gpu in gpus)
+        {
+            Console.WriteLine("GPU: " + gpu.Name);
+            Console.WriteLine("Temperature: " + string.Join(", ", gpu.Temperature));
+            Console.WriteLine("Clock: " + string.Join(", ", gpu.Clock));
+            Console.WriteLine("Load: " + string.Join(", ", gpu.Load));
+            Console.WriteLine("Fan Speed: " + string.Join(", ", gpu.Fan));
+        }
+    }
+}</code></pre>
+	<p class="style4"><strong>VB.NET Example</strong></p>
+		  <pre><code>
+Imports ACPi
+
+Module Module1
+    Sub Main()
+        Dim cpu As New CPU()
+
+        Console.WriteLine("User: " & cpu.GetUserName())
+        Console.WriteLine("CPU: " & cpu.GetCPUName())
+
+        Dim rams = cpu.GetRAMInfos()
+        For Each ram In rams
+            Console.WriteLine("RAM: " & ram.Name)
+            Console.WriteLine("Load: " & String.Join(", ", ram.Load))
+            Console.WriteLine("Used: " & String.Join(", ", ram.Used))
+            Console.WriteLine("Available: " & String.Join(", ", ram.Available))
+            Console.WriteLine("Total: " & String.Join(", ", ram.Total))
+        Next
+
+        Dim gpus = cpu.GetGPUInfo()
+        For Each gpu In gpus
+            Console.WriteLine("GPU: " & gpu.Name)
+            Console.WriteLine("Temperature: " & String.Join(", ", gpu.Temperature))
+            Console.WriteLine("Clock: " & String.Join(", ", gpu.Clock))
+            Console.WriteLine("Load: " & String.Join(", ", gpu.Load))
+            Console.WriteLine("Fan Speed: " & String.Join(", ", gpu.Fan))
+        Next
+    End Sub
+End Module</code></pre>
+		  <p><br />
+            <strong><span class="style12">C</span>ompatibility</strong></p>
+          <ul>
+            <li><span class="style13"><span class="style4"><strong data-start="3855" data-end="3871">NET Framework </strong>: .NET 2.0/3.5/4.0/4.7 and newer.</span></span></li>
+            <li class="style4"><strong data-start="3898" data-end="3914">Architecture</strong>: Works with both 32-bit and 64-bit applications (recommended: target <strong data-start="3984" data-end="3991">x64</strong>)</li>
+      </ul>
+    <p><strong><span class="style12">N</span>otes</strong></p>
+    <ul>
+      <li class="style4">All functionality is accessed via the CPU class in the ACPi namespace.</li>
+      <li class="style4">Ideal for system diagnostics, hardware dashboards, performance monitoring tools, and similar utilities.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>
