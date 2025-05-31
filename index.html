@@ -7,7 +7,7 @@
 <meta name="keywords" content="ACPi, .NET Library, Hardware Monitor, CPU Info, GPU Info, RAM Usage, System Diagnostics, ACPi.dll" />
 <meta name="author" content="Ari Sohandri Putra" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://acpinetlib.github.io/" />
+<link rel="canonical" href="https://example.com/" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 <!-- Schema.org for Google -->
@@ -24,8 +24,8 @@
     "@type": "Person",
     "name": "Ari Sohandri Putra"
   },
-  "url": "https://acpinetlib.github.io/",
-  "downloadUrl": "https://acpinetlib.github.io/ACPi.zip"
+  "url": "https://example.com/",
+  "downloadUrl": "https://example.com/ACPi.zip"
 }
 </script>
 
@@ -67,6 +67,8 @@ pre {
 .style10 {font-size: small; color: #000000; }
 .style12 {font-size: x-large}
 .style13 {font-size: medium}
+.style15 {font-size: small; font-style: italic; }
+.style16 {font-weight: bold}
 -->
 </style>
 </head>
@@ -76,13 +78,14 @@ pre {
   <tr>
     <td width="379" rowspan="2" align="center" valign="top" bgcolor="#eaeaea"><div align="center">
       <p><img src="ACPi_Icon.png" alt="ACPi Icon" width="369" height="339" /></p>
-      <p><span class="style3">Copyright (c) 2025 Ari Sohandri Putra. All Rights Reserved. </span></p>
+      <p><span class="style3">Copyright (c) 2025 <strong>Ari Sohandri Putra</strong>. All Rights Reserved. </span></p>
     </div>
-    <p><img src="Capture.PNG" width="482" height="635" /></p></td>
+    <p>ScreenShot</p>
+    <p><img src="Capture.png" width="100%" /></p></td>
     <td width="702" align="left" valign="top"><p><span class="style1">W</span>elcome <em><strong>!</strong></em> <hr />
       <strong data-start="219" data-end="231">ACPi.dll</strong> is a lightweight .NET library designed to provide access to real-time system hardware information including <strong>CPU</strong>, <strong>GPU</strong>, <strong>RAM</strong>, <strong>HDD</strong>, and motherboard details. It enables developers to build monitoring tools and system diagnostic utilities effortlessly.
       <p><strong><span class="style12">F</span>eatures</strong></p>
-    <table border="1">
+    <table border="1" bordercolor="#000000">
       <thead>
         <tr>
           <th width="213" align="left" bgcolor="#FFFF00"><span class="style10">Feature</span></th>
@@ -92,41 +95,41 @@ pre {
       <tbody>
         <tr>
           <td><span class="style6">GetUserName()</span></td>
-          <td><span class="style4">Retrieves the current Windows user name</span></td>
+          <td><span class="style15">Retrieves the current Windows user name</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetCPUName()</span></td>
-          <td><span class="style4">Returns the name/model of the processor</span></td>
+          <td><span class="style15">Returns the name/model of the processor</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetCPUInfo()</span></td>
-          <td><span class="style4">Retrieves CPU temperature, clock speed, and load</span></td>
+          <td><span class="style15">Retrieves CPU temperature, clock speed, and load</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetRAMInfos()</span></td>
-          <td><span class="style4">Provides comprehensive RAM usage statistics</span></td>
+          <td><span class="style15">Provides comprehensive RAM usage statistics</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetGPUInfo()</span></td>
-          <td><span class="style4">Returns GPU load, clock, temperature, and fan speed</span></td>
+          <td><span class="style15">Returns GPU load, clock, temperature, and fan speed</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetHDDInfo()</span></td>
-          <td><span class="style4">Returns hard drive temperature and usage</span></td>
+          <td><span class="style15">Returns hard drive temperature and usage</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetMainboardName()</span></td>
-          <td><span class="style4">Returns the motherboard model name</span></td>
+          <td><span class="style15">Returns the motherboard model name</span></td>
         </tr>
         <tr>
           <td><span class="style6">GetCoreCount()</span></td>
-          <td><span class="style4">Returns the number of physical CPU cores</span></td>
+          <td><span class="style15">Returns the number of physical CPU cores</span></td>
         </tr>
       </tbody>
     </table>    
     <p><strong><span class="style12">I</span>nstallation</strong></p>
     <ol>
-      <li><strong data-start="1368" data-end="1391"><a href="ACPi.zip">Download ACPi</a></strong> and place it in your project directory.</li>
+      <li><span class="style16"><a href="ACPi_NET2.0.zip">Download ACPi</a></span><strong><a href="ACPi_NET2.0.zip">_NET2.0</a></strong> or <span class="style16"><a href="ACPi_NET4.0.zip">Download ACPi</a></span><strong><a href="ACPi_NET2.0.zip">_NET4.0</a></strong> and place it in your project directory.</li>
       <li>In <strong data-start="1438" data-end="1455">Visual Studio</strong>:
         <ul>
           <li>Right-click your project &rarr; <strong data-start="1489" data-end="1509">Add Reference...</strong></li>
@@ -203,7 +206,7 @@ End Module</code></pre>
 		  <p><br />
             <strong><span class="style12">C</span>ompatibility</strong></p>
           <ul>
-            <li><span class="style13"><span class="style4"><strong data-start="3855" data-end="3871">NET Framework </strong>: .NET 2.0/3.5/4.0/4.7 and newer.</span></span></li>
+            <li><span class="style13"><span class="style4"><strong data-start="3855" data-end="3871">NET Framework </strong>: .NET 2.0/4.0 or newer.</span></span></li>
             <li class="style4"><strong data-start="3898" data-end="3914">Architecture</strong>: Works with both 32-bit and 64-bit applications (recommended: target <strong data-start="3984" data-end="3991">x64</strong>)</li>
       </ul>
     <p><strong><span class="style12">N</span>otes</strong></p>
